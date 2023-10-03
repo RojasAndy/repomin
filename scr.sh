@@ -1,5 +1,4 @@
 echo "Tmux not found. Installing..."
-sudo dnf -y tmux
 sudo dnf install -y epel-release
 sudo yum config-manager --set-enabled appstream
 dnf install -y pkg-config
