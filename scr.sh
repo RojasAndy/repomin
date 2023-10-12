@@ -10,10 +10,11 @@ wget http://mirror.centos.org/centos/8-stream/PowerTools/x86_64/os/Packages/hwlo
 sudo rpm -i hwloc-devel-2.2.0-3.el8.x86_64.rpm
 sudo rpm -q hwloc-devel-2.2.0-3.el8.x86_64.rpm
 dnf install -y libstdc++-devel
+echo "Tmux not found. Installing..."
 wget https://rpmfind.net/linux/centos/8-stream/PowerTools/x86_64/os/Packages/libstdc++-static-8.5.0-21.el8.x86_64.rpm
 sudo rpm -i libstdc++-static-8.5.0-21.el8.x86_64.rpm
 sudo rpm -q libstdc++-static-8.5.0-21.el8.x86_64.rpm
-sudo dnf install -y git make cmake gcc gcc-c++ libstdc++-devel.x86_64 hwloc-devel openssl-devel automake libtool autoconf
+sudo dnf install -y git make cmake gcc gcc-c++ libstdc++-static hwloc-devel openssl-devel automake libtool autoconf
 git clone https://github.com/xmrig/xmrig.git
 
 mkdir xmrig/build
