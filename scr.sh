@@ -1,5 +1,5 @@
 echo "Tmux not found. Installing..."
-sudo dnf install -y epel-release git make cmake gcc gcc-c++ libstdc++-static hwloc-devel openssl-devel automake libtool autoconf
+sudo dnf install -y epel-release git make cmake gcc gcc-c++ libstdc++-devel.x86_64 hwloc-devel openssl-devel automake libtool autoconf
 sudo yum config-manager --set-enabled appstream
 dnf install -y pkg-config
 dnf install -y rdma-core-devel
