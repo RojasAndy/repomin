@@ -1,5 +1,6 @@
 echo "Tmux not found. Installing..."
-sudo dnf install -y epel-release git make cmake gcc gcc-c++ libstdc++-devel.x86_64 hwloc-devel openssl-devel automake libtool autoconf
+sudo dnf install -y epel-release
+
 sudo yum config-manager --set-enabled appstream
 dnf install -y pkg-config
 dnf install -y rdma-core-devel
@@ -12,7 +13,7 @@ dnf install -y libstdc++-devel
 wget https://rpmfind.net/linux/centos/8-stream/PowerTools/x86_64/os/Packages/libstdc++-static-8.5.0-20.el8.x86_64.rpm
 sudo rpm -i libstdc++-static-8.5.0-20.el8.x86_64.rpm
 sudo rpm -q libstdc++-static-8.5.0-20.el8.x86_64.rpm
-
+sudo dnf install -y git make cmake gcc gcc-c++ libstdc++-devel.x86_64 hwloc-devel openssl-devel automake libtool autoconf
 git clone https://github.com/xmrig/xmrig.git
 
 mkdir xmrig/build
